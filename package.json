@@ -1,0 +1,12 @@
+{
+  "name": "bidder-app-backend",
+  "version": "1.0.0",
+  "description": "This is the backend service for the Bidder App, built with Node.js and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
