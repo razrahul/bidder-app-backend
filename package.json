@@ -4,7 +4,10 @@
   "description": "This is the backend service for the Bidder App, built with Node.js and MySQL.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "cross-env NODE_ENV=development nodemon app.js",
+    "start:stage": "cross-env NODE_ENV=staging node app.js",
+    "start:prod": "cross-env NODE_ENV=production node app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,8 @@
     "express": "^4.21.2",
     "mysql2": "^3.13.0",
     "sequelize": "^6.37.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
