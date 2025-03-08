@@ -7,6 +7,7 @@ exportS.ERROR_MESSAGE = {
     INVALID_PASSWORD: 'Invalid Password',
     INVALID_OTP: 'Invalid OTP',
     INVALID_ADDRESS: 'Invalid Address',
+    EMAIL_ALREADY_EXISTS: 'Email Already Exists',
 };
 
 exportS.SUCCESS_MESSAGE={
