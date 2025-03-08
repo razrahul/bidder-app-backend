@@ -61,7 +61,12 @@ const Users = sequelize.define("Users",
         },
         deleted_by:{
             type: DataTypes.INTEGER,
-        }
+        },
+        updated_at:{
+            type: DataTypes.DATE,
+            allowNull: true,
+            defaultValue: null
+        },
     },
     {
        tableName: "users",
@@ -70,11 +75,11 @@ const Users = sequelize.define("Users",
        updatedAt: "updated_at",
        paranoid: true, //soft deleting
        deletedAt: "deleted_at", 
-    //    hooks: {
-    //        beforeCreate: (user, options) => {
-    //            user.updated_at = null ; // explicitly setting null to avoid any value
-    //        }
-    //    }
+       hooks: {
+           beforeCreate: (user, options) => {
+               user.updated_at = null ; // explicitly setting null to avoid any value
+           }
+       }
     }
 );
 
