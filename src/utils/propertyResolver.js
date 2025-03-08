@@ -1,5 +1,7 @@
 exports.ERROR_MESSAGE = {
     SOMETHING_WENT_WRONG: 'Something went wrong',
+    UNAUTHORIED_USER: 'You are not authorized ',
+    INVALID_ROLE: 'Invalid Role',
     INVALID_REQUEST: 'Invalid Request',
     INVALID_DATA: 'Invalid Data',
     INVALID_EMAIL: 'Invalid Email',

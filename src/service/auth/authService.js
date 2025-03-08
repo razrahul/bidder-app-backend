@@ -5,7 +5,10 @@ const { ERROR_MESSAGE } = require("../../utils/propertyResolver");
 
 const saveUser = async (userDetails) => {
     try {
-        const {email} = userDetails;
+        const {email, role_id} = userDetails;
+        if(role_id == 1) {
+            throw new Error(ERROR_MESSAGE.UNAUTHORIED_USER);
+        }
 
         const existingUser = await Users.findOne({email});
         if (existingUser) {

@@ -16,7 +16,7 @@ const registerUser = async (req, res, next) => {
     sendSuccessResponse(res, SUCCESS_MESSAGE.USER_CREATED_SUCCESSFULLY, newUser, 201);
    } catch (error) {
     //  res.send(error.message);
-    sendErrorResponse(res, error.message || ERROR_MESSAGE.SOMETHING_WENT_WRONG, "", 40);
+    sendErrorResponse(res, error.message || ERROR_MESSAGE.SOMETHING_WENT_WRONG, "", 400);
    }
     
  }   
