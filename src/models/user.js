@@ -26,7 +26,7 @@ const Users = sequelize.define("Users",
         },
         password:{
             type: DataTypes.STRING,
-            // allowNull: false
+            allowNull: false
         },
         verify_account_token:{
             type: DataTypes.STRING,
@@ -70,11 +70,11 @@ const Users = sequelize.define("Users",
        updatedAt: "updated_at",
        paranoid: true, //soft deleting
        deletedAt: "deleted_at", 
-       hooks: {
-           beforeCreate: (user, options) => {
-               user.updated_at = null ; // explicitly setting null to avoid any value
-           }
-       }
+    //    hooks: {
+    //        beforeCreate: (user, options) => {
+    //            user.updated_at = null ; // explicitly setting null to avoid any value
+    //        }
+    //    }
     }
 );
 

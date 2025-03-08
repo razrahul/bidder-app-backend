@@ -1,4 +1,4 @@
-exportS.ERROR_MESSAGE = {
+exports.ERROR_MESSAGE = {
     SOMETHING_WENT_WRONG: 'Something went wrong',
     INVALID_REQUEST: 'Invalid Request',
     INVALID_DATA: 'Invalid Data',
@@ -10,7 +10,8 @@ exportS.ERROR_MESSAGE = {
     EMAIL_ALREADY_EXISTS: 'Email Already Exists',
 };
 
-exportS.SUCCESS_MESSAGE={
+exports.SUCCESS_MESSAGE={
+    USER_CREATED_SUCCESSFULLY:'User Created Successfully',
     DATA_FETCHED_SUCCESSFULLY:'Data Fetched Successfully',
     DATA_SAVED_SUCCESSFULLY:'Data Saved Successfully',
     DATA_UPDATED_SUCCESSFULLY:'Data Updated Successfully',
